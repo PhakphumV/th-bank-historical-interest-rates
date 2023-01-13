@@ -20,8 +20,8 @@ Found that the download button is using Javascript as following
 And this ```downloadFile``` function works as following
 
 1. Retrieve inputs such as dateFrom, dateTo, bankId, bankName and an option to select whether to extract interest rate for deposit or loan
-2. Construct an url link with above params 
-3. Open a tab to the url to start download a file corresponding to the inputs.
+2. Construct an url link with above params, the url is https://www.bot.or.th/thai/statistics/_layouts/application/interest_rate/DownloadFile.aspx
+4. Open a tab to the url to start download a file corresponding to the inputs.
 
 ```
 function downloadFile( dlType){
@@ -43,4 +43,81 @@ var url = "./DownloadFile.aspx?dlType=" + dlType + "&dateFrom=" + dateFrom + "&d
 }
 ```
 
+The list of all available banks are in the ```select``` input as following:
 
+```
+<select name="ctl00$PlaceHolderMain$ddlBank" id="ctl00_PlaceHolderMain_ddlBank" class="bot-form-field">
+	<option value="0">เลือกธนาคาร...</option>
+	<option value="002">กรุงเทพ</option>
+	<option value="006">กรุงไทย</option>
+	<option value="004">กสิกรไทย</option>
+	<option value="014">ไทยพาณิชย์</option>
+	<option value="025">กรุงศรีอยุธยา</option>
+	<option value="011">ทหารไทย</option>
+	<option value="011">ทหารไทยธนชาต</option>
+	<option value="015">นครหลวงไทย</option>
+	<option value="021">ศรีนคร</option>
+	<option value="024">ยูไนเต็ด โอเวอร์ซีส์ (ไทย)</option>
+	<option value="024">ยูโอบี</option>
+	<option value="024">เอเชีย</option>
+	<option value="022">ซีไอเอ็มบี ไทย</option>
+	<option value="012">ดีบีเอส ไทยทนุ</option>
+	<option value="020">สแตนดาร์ดชาร์เตอร์ด (ไทย)</option>
+	<option value="020">สแตนดาร์ดชาร์เตอร์ดนครธน</option>
+	<option value="019">ยูโอบี รัตนสิน</option>
+	<option value="010">แห่งโตเกียว-มิตซูบิชิ</option>
+	<option value="010">แห่งโตเกียว-มิตซูบิชิ ยูเอฟเจ</option>
+	<option value="017">ซิตี้แบงก์</option>
+	<option value="018">ซากุระ</option>
+	<option value="018">ซูมิโตโม มิตซุย แบงกิ้ง คอร์ปอร์เรชั่น</option>
+	<option value="031">เอช เอส บี ซี</option>
+	<option value="031">ฮ่องกงและเซี่ยงไฮ้แบงกิ้งคอร์ปอเรชั่น</option>
+	<option value="032">ดอยซ์แบงก์</option>
+	<option value="007">สแตนดาร์ดชาร์เตอร์ด</option>
+	<option value="008">เจพีมอร์แกน เชส</option>
+	<option value="008">เชสแมนแฮตตัน</option>
+	<option value="028">คาลิยง</option>
+	<option value="028">เครดิต อะกริกอล คอร์ปอเรทแอนด์อินเวสเมนท์แบงก์ </option>
+	<option value="028">เครดิต อะกริกอล อินโดสุเอซ</option>
+	<option value="027">แห่งอเมริกาเนชั่นแนลแอสโซซิเอชั่น</option>
+	<option value="029">ภารตโอเวอร์ซีส์</option>
+	<option value="029">อินเดียนโอเวอร์ซีส์</option>
+	<option value="005">เดอะรอยัลแบงก์อ๊อฟสกอตแลนด์ พีแอลซี </option>
+	<option value="005">เดอะรอยัลแบงก์อ๊อฟสกอตแลนด์ เอ็น.วี.</option>
+	<option value="005">เอบีเอ็น แอมโร เอ็น.วี.</option>
+	<option value="026">สากลพาณิชย์แห่งประเทศจีน</option>
+	<option value="023">อาร์ เอช บี</option>
+	<option value="009">โอเวอร์ซี-ไชนิสแบงกิ้งคอร์ปอเรชั่น</option>
+	<option value="047">เพื่อการอุตสาหกรรมแห่งประเทศญี่ปุ่น</option>
+	<option value="046">ซูมิโตโม</option>
+	<option value="052">แห่งประเทศจีน</option>
+	<option value="039">ได-อิจิ คังเงียว</option>
+	<option value="039">มิซูโฮ</option>
+	<option value="039">มิซูโฮ คอร์ปอเรต</option>
+	<option value="040">เดรสต์เนอร์ เอจี</option>
+	<option value="053">แห่งโนวาสโกเทีย</option>
+	<option value="045">บีเอ็นพี พารีบาส์</option>
+	<option value="065">ธนชาต</option>
+	<option value="003">กรุงเทพฯ พาณิชยการ</option>
+	<option value="067">ทิสโก้</option>
+	<option value="013">มหานคร</option>
+	<option value="026">เมกะ สากลพาณิชย์</option>
+	<option value="026">สากลพาณิชย์แห่งประเทศจีน</option>
+	<option value="041">โซซิเยเต้ เจเนราล</option>
+	<option value="048">ยูเอฟเจ</option>
+	<option value="069">เกียรตินาคิน</option>
+	<option value="069">เกียรตินาคินภัทร</option>
+	<option value="073">แลนด์ แอนด์ เฮ้าส์ </option>
+	<option value="073">แลนด์ แอนด์ เฮ้าส์ เพื่อรายย่อย</option>
+	<option value="070">สินเอเซีย</option>
+	<option value="070">ไอซีบีซี (ไทย)</option>
+	<option value="072">จีอี มันนี่ เพื่อรายย่อย</option>
+	<option value="071">ไทยเครดิตเพื่อรายย่อย</option>
+	<option value="068">เอไอจี เพื่อรายย่อย</option>
+	<option value="052">แห่งประเทศจีน(ไทย)</option>
+	<option value="079">ธนาคารเอเอ็นแซด (ไทย) จำกัด (มหาชน)</option>
+	<option value="080">ซูมิโตโม มิตซุย ทรัสต์  (ไทย)</option>
+</select>
+```
+
+## 
