@@ -11,7 +11,7 @@ The [BOT webpage](https://www.bot.or.th/thai/statistics/_layouts/application/int
 ## Assessment
 // Done on 13JAN2023
 
-Found that the download button is using Javascript as following
+From the webpage, the download buttons are using Javascript as following:
 
 ```
 <a href="#" onclick="downloadFile('interestXLS')" class="app_table_content_link">...</a>
@@ -121,4 +121,15 @@ The list of all available banks are in the ```select``` input as following:
 </select>
 ```
 
-## 
+The download url doesn't require any authentication so it is feasible to directly access to it and modify the params within its capacity allowed to extract the data.
+
+## TODO
+
+[] To loop each year starting from 1996 to current year
+[] Only for year 1996, dateFrom is 31JAN1996
+[] Only for current year, dateTo is ```today```
+[] To loop each commercial banks available
+[] For each loop, turn CSV response into a dataframe
+[] For each loop, Add a column in the dataframe for bank name/id
+[] (Potentially) Convert Thai date format (i.e. 03 ม.ค. 2566) into international/ISO 8601 date format ```YYYY-MM-DD``` (i.e. 2023-01-03)
+[] Consolidate all dataframe into a single dataframe
