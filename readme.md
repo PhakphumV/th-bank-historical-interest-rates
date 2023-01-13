@@ -155,14 +155,15 @@ Then open a browser to http://localhost:8888 or http://127.0.0.1:8888
 
 ## TODO
 
-- [ ] To loop each year starting from 1996 to current year
-- [ ] By default for each year, dateFrom is 01JAN{year} and dateTo is 31DEC{year}
-- [ ] Only for year 1996, dateFrom is 31JAN1996
-- [ ] Only for current year, dateTo is ```today```
-- [ ] To loop each commercial banks available
-- [ ] For each loop, turn CSV response into a dataframe
-- [ ] For each loop, Add a column in the dataframe for bank name/id
+- [X] To loop each year starting from 1996 to current year
+- [X] By default for each year, dateFrom is 01JAN{year} and dateTo is 31DEC{year}
+- [X] Only for year 1996, dateFrom is 31JAN1996
+- [X] Only for current year, dateTo is ```today```
+- [X] To loop each commercial banks available
+- [X] For each loop, turn CSV response into a dataframe
+- [X] For each loop, Add a column in the dataframe for bank name/id
 - [ ] (Potentially) Convert Thai date format (i.e. 03 ม.ค. 2566) into international/ISO 8601 date format ```YYYY-MM-DD``` (i.e. 2023-01-03)
-- [ ] Consolidate all dataframe into a single dataframe
-
+- [X] Consolidate all dataframe into a single dataframe
+- [ ] pip install progressbar
+- [ ] Use progressbar to display progress of data extraction
 
