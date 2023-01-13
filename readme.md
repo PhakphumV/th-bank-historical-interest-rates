@@ -164,6 +164,6 @@ Then open a browser to http://localhost:8888 or http://127.0.0.1:8888
 - [X] For each loop, Add a column in the dataframe for bank name/id
 - [ ] (Potentially) Convert Thai date format (i.e. 03 ม.ค. 2566) into international/ISO 8601 date format ```YYYY-MM-DD``` (i.e. 2023-01-03)
 - [X] Consolidate all dataframe into a single dataframe
-- [ ] pip install progressbar
-- [ ] Use progressbar to display progress of data extraction
+- [X] pip install progressbar
+- [X] Use progressbar to display progress of data extraction
 
