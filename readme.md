@@ -123,6 +123,35 @@ The list of all available banks are in the ```select``` input as following:
 
 The download url doesn't require any authentication so it is feasible to directly access to it and modify the params within its capacity allowed to extract the data.
 
+## Setup
+
+### Create virtual environment
+
+```
+virtualenv venv
+```
+
+### Activate virtual environment
+
+For Windows,
+
+```
+. .\venv\Scripts\activate
+```
+
+### Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### Run Jupyter Notebook
+
+```
+jupyter notebook
+```
+
+
 ## TODO
 
 - [ ] To loop each year starting from 1996 to current year
@@ -134,3 +163,5 @@ The download url doesn't require any authentication so it is feasible to directl
 - [ ] For each loop, Add a column in the dataframe for bank name/id
 - [ ] (Potentially) Convert Thai date format (i.e. 03 ม.ค. 2566) into international/ISO 8601 date format ```YYYY-MM-DD``` (i.e. 2023-01-03)
 - [ ] Consolidate all dataframe into a single dataframe
+
+
