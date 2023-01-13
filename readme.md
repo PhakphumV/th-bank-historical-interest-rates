@@ -126,6 +126,7 @@ The download url doesn't require any authentication so it is feasible to directl
 ## TODO
 
 - [ ] To loop each year starting from 1996 to current year
+- [ ] By default for each year, dateFrom is 01JAN{year} and dateTo is 31DEC{year}
 - [ ] Only for year 1996, dateFrom is 31JAN1996
 - [ ] Only for current year, dateTo is ```today```
 - [ ] To loop each commercial banks available
