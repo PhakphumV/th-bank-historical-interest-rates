@@ -2,10 +2,11 @@
 
 This is a jupyter notebook to extract historical interest rates of each commercial banks in Thailand since 31JAN1996 (31 ม.ค. 2539)
 
-The [webpage](https://www.bot.or.th/thai/statistics/_layouts/application/interest_rate/in_historical.aspx) provide historical interest rates per day of selected bank and given date range either in XLS format or CSV format. However, the date range is limited to 1 year and a single bank can be selected at a time.
+The [BOT webpage](https://www.bot.or.th/thai/statistics/_layouts/application/interest_rate/in_historical.aspx) provide historical interest rates per day of selected bank and given date range either in XLS format or CSV format. However, the date range is limited to 1 year and a single bank can be selected at a time.
 
 ## Objective
-To automate data extraction from this webpage in order to extract all different commercial banks in Thailand and data from 31JAN1996 into a consolidated format.
+- To automate data extraction from this webpage in order to extract all different commercial banks in Thailand and data from 31JAN1996 into a consolidated format.
+- Expected formats : CSV, JSON, SQL.
 
 ## Assessment
 // Done on 13JAN2023
