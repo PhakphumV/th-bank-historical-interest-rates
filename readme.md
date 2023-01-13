@@ -125,11 +125,11 @@ The download url doesn't require any authentication so it is feasible to directl
 
 ## TODO
 
-[ ] To loop each year starting from 1996 to current year
-[ ] Only for year 1996, dateFrom is 31JAN1996
-[ ] Only for current year, dateTo is ```today```
-[ ] To loop each commercial banks available
-[ ] For each loop, turn CSV response into a dataframe
-[ ] For each loop, Add a column in the dataframe for bank name/id
-[ ] (Potentially) Convert Thai date format (i.e. 03 ม.ค. 2566) into international/ISO 8601 date format ```YYYY-MM-DD``` (i.e. 2023-01-03)
-[ ] Consolidate all dataframe into a single dataframe
+- [ ] To loop each year starting from 1996 to current year
+- [ ] Only for year 1996, dateFrom is 31JAN1996
+- [ ] Only for current year, dateTo is ```today```
+- [ ] To loop each commercial banks available
+- [ ] For each loop, turn CSV response into a dataframe
+- [ ] For each loop, Add a column in the dataframe for bank name/id
+- [ ] (Potentially) Convert Thai date format (i.e. 03 ม.ค. 2566) into international/ISO 8601 date format ```YYYY-MM-DD``` (i.e. 2023-01-03)
+- [ ] Consolidate all dataframe into a single dataframe
