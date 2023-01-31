@@ -131,6 +131,12 @@ The download url doesn't require any authentication so it is feasible to directl
 
 ![MOR Interest rate per bank](./loan-interest-rate-mor-per-banks.png)
 
+### MLR interest rate
+
+![Average MLR Interest rate](./loan-interest-rate-mlr-average.png)
+
+![MLR Interest rate per bank](./loan-interest-rate-mlr-per-banks.png)
+
 ## Setup
 
 ### Create virtual environment
