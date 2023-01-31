@@ -123,6 +123,14 @@ The list of all available banks are in the ```select``` input as following:
 
 The download url doesn't require any authentication so it is feasible to directly access to it and modify the params within its capacity allowed to extract the data.
 
+## Result
+
+### MOR interest rate
+
+![Average MOR Interest rate](./loan-interest-rate-mor-average.png)
+
+![MOR Interest rate per bank](./loan-interest-rate-mor-per-banks.png)
+
 ## Setup
 
 ### Create virtual environment
