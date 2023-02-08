@@ -128,7 +128,7 @@ The download url doesn't require any authentication so it is feasible to directl
 ### MOR interest rate
 
 ![Average MOR Interest rate](./loan-interest-rate-mor-average.png)
-
+ Streamlit — The fastest way to build data apps in Python 
 ![MOR Interest rate per bank](./loan-interest-rate-mor-per-banks.png)
 
 ### MLR interest rate
@@ -176,8 +176,9 @@ Then open a browser to http://localhost:8888 or http://127.0.0.1:8888
 - [X] To loop each commercial banks available
 - [X] For each loop, turn CSV response into a dataframe
 - [X] For each loop, Add a column in the dataframe for bank name/id
-- [ ] (Potentially) Convert Thai date format (i.e. 03 ม.ค. 2566) into international/ISO 8601 date format ```YYYY-MM-DD``` (i.e. 2023-01-03)
+- [x] Convert Thai date format (i.e. 03 ม.ค. 2566) into international/ISO 8601 date format ```YYYY-MM-DD``` (i.e. 2023-01-03)
 - [X] Consolidate all dataframe into a single dataframe
 - [X] pip install progressbar
 - [X] Use progressbar to display progress of data extraction
+- [ ] Built a webpage using 'streamlit'
 
